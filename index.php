@@ -54,4 +54,13 @@
     echo "<br>";
     echo $neymarJr->getAffichageDetailsJoueur();
     echo "<br>";
+
+    echo $kyks->getAffichageContractsJoueur();
+    echo "<br>";
+    echo $cr7->getAffichageContractsJoueur();
+    echo "<br>";
+    echo $messi->getAffichageContractsJoueur();
+    echo "<br>";
+    echo $neymarJr->getAffichageContractsJoueur();
+    echo "<br>";
 ?>

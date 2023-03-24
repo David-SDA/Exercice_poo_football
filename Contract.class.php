@@ -9,6 +9,7 @@
             $this->_joueur = $joueur;
             $this->_equipe = $equipe;
             $this->_dateDebutSaison = $dateDebutSaison;
+            $this->_joueur->setContracts($this);
         }
 
         /* Getter et Setter pour le joueur de ce contract */

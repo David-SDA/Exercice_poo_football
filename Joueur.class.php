@@ -66,6 +66,15 @@
             return "$this ($this->_nationalite - " . $this->getAgeJoueur() . " ans)<br>";
         }
 
+        /* Méthode pour obtenir l'affichage des contracts du joueur */
+        public function getAffichageContractsJoueur() : string{
+            $result = "";
+            foreach($this->_contracts as $contract){
+                $result .= "- " . $contract->getEquipe() . " (" . $contract->getDateDebutSaison() . ")<br>";
+            }
+            return $result;
+        }
+
         /* Méthode __toString de la classe */
         public function __toString(){
             return $this->_prenom . " " . $this->_nom;
