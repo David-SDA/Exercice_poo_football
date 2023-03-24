@@ -45,6 +45,11 @@
             array_push($this->_contracts, $contract);
         }
 
+        /* Méthode pour obtenir l'affichage des détails de base de l'équipe */
+        public function getAffichageDétailsEquipe() : string{
+            return "$this ($this->_pays - $this->_dateCreation)<br>";
+        }
+
         /* Méthode __toString de la classe */
         public function __toString(){
             return $this->_nom;

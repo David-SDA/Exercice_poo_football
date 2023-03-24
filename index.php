@@ -46,21 +46,21 @@
     echo $italie->getAffichageEquipesPays();
     echo "<br>";
 
-    echo $kyks->getAffichageDetailsJoueur();
+    echo $kyks->getAffichageDetailsCompletJoueur();
     echo "<br>";
-    echo $cr7->getAffichageDetailsJoueur();
+    echo $cr7->getAffichageDetailsCompletJoueur();
     echo "<br>";
-    echo $messi->getAffichageDetailsJoueur();
+    echo $messi->getAffichageDetailsCompletJoueur();
     echo "<br>";
-    echo $neymarJr->getAffichageDetailsJoueur();
+    echo $neymarJr->getAffichageDetailsCompletJoueur();
     echo "<br>";
 
-    echo $kyks->getAffichageContractsJoueur();
+    echo $psg->getAffichageDétailsEquipe();
     echo "<br>";
-    echo $cr7->getAffichageContractsJoueur();
+    echo $rcsa->getAffichageDétailsEquipe();
     echo "<br>";
-    echo $messi->getAffichageContractsJoueur();
+    echo $fcb->getAffichageDétailsEquipe();
     echo "<br>";
-    echo $neymarJr->getAffichageContractsJoueur();
+    echo $juve->getAffichageDétailsEquipe();
     echo "<br>";
 ?>

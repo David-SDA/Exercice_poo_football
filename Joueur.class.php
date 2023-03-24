@@ -75,6 +75,13 @@
             return $result;
         }
 
+        /* Méthode d'affichage des détails complet du joueur */
+        public function getAffichageDetailsCompletJoueur() : string{
+            $result = $this->getAffichageDetailsJoueur();
+            $result .= $this->getAffichageContractsJoueur();
+            return $result;
+        }
+
         /* Méthode __toString de la classe */
         public function __toString(){
             return $this->_prenom . " " . $this->_nom;
