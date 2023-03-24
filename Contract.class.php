@@ -6,9 +6,9 @@
 
         /* Méthode __construct de la classe */
         public function __construct(Joueur $joueur, Equipe $equipe, string $dateDebutSaison){
-            $this->_joueur =$joueur;
-            $this->_equipe =$equipe;
-            $this->_dateDebutSaison =$dateDebutSaison;
+            $this->_joueur = $joueur;
+            $this->_equipe = $equipe;
+            $this->_dateDebutSaison = $dateDebutSaison;
         }
 
         /* Getter et Setter pour le joueur de ce contract */
