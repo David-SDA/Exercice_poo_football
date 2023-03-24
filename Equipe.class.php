@@ -2,14 +2,14 @@
     class Equipe{
         private string $_nom;
         private Pays $_pays;
-        private DateTime $_dateCreation;
+        private string $_dateCreation;
         private array $_contracts = [];
 
         /* Méthode __construct de la classe */
         public function __construct(string $nom, Pays $pays, string $dateCreation){
             $this->_nom = $nom;
             $this->_pays = $pays;
-            $this->_dateCreation = new DateTime($dateCreation);
+            $this->_dateCreation = $dateCreation;
         }
 
         /* Getter et Setter pour le nom de l'équipe */
@@ -29,11 +29,11 @@
         }
 
         /* Getter et Setter pour la date de création de l'équipe */
-        public function getDateCreation() : DateTime{
+        public function getDateCreation() : string{
             return $this->_dateCreation;
         }
         public function setDateCreation(string $dateCreation){
-            $this->_dateCreation = new DateTime($dateCreation);
+            $this->_dateCreation = $dateCreation;
         }
 
         /* Getter et Setter pour les contrats de l'équipe */
