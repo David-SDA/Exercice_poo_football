@@ -54,6 +54,18 @@
             array_push($this->_contracts, $contract);
         }
 
+        /* Méthode pour calculer l'âge d'un joueur */
+        public function getAgeJoueur(){
+            $aujourdhui=new DateTime();
+            $diff=$aujourdhui->diff($this->_dateNaissance);
+            return $diff->format("%Y");
+        }
+
+        /* Méthode pour obtenir l'affichage des détails de base du joueur */
+        public function getAffichageDetailsJoueur() : string{
+            return "$this ($this->_nationalite - " . $this->getAgeJoueur() . " ans)<br>";
+        }
+
         /* Méthode __toString de la classe */
         public function __toString(){
             return $this->_prenom . " " . $this->_nom;

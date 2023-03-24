@@ -45,4 +45,13 @@
     echo "<br>";
     echo $italie->getAffichageEquipesPays();
     echo "<br>";
+
+    echo $kyks->getAffichageDetailsJoueur();
+    echo "<br>";
+    echo $cr7->getAffichageDetailsJoueur();
+    echo "<br>";
+    echo $messi->getAffichageDetailsJoueur();
+    echo "<br>";
+    echo $neymarJr->getAffichageDetailsJoueur();
+    echo "<br>";
 ?>
