@@ -44,7 +44,7 @@
     echo $angleterre->getAffichageEquipesPays();
     echo "<br>";
     echo $italie->getAffichageEquipesPays();
-    echo "<br>";
+    echo "<br>****************************************<br>";
 
     echo $kyks->getAffichageDetailsCompletJoueur();
     echo "<br>";
@@ -53,14 +53,14 @@
     echo $messi->getAffichageDetailsCompletJoueur();
     echo "<br>";
     echo $neymarJr->getAffichageDetailsCompletJoueur();
-    echo "<br>";
+    echo "<br>****************************************<br>";
 
-    echo $psg->getAffichageDétailsEquipe();
+    echo $psg->getAffichageDetailsCompletEquipe();
     echo "<br>";
-    echo $rcsa->getAffichageDétailsEquipe();
+    echo $rcsa->getAffichageDetailsCompletEquipe();
     echo "<br>";
-    echo $fcb->getAffichageDétailsEquipe();
+    echo $fcb->getAffichageDetailsCompletEquipe();
     echo "<br>";
-    echo $juve->getAffichageDétailsEquipe();
+    echo $juve->getAffichageDetailsCompletEquipe();
     echo "<br>";
 ?>

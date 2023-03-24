@@ -46,8 +46,24 @@
         }
 
         /* Méthode pour obtenir l'affichage des détails de base de l'équipe */
-        public function getAffichageDétailsEquipe() : string{
+        public function getAffichageDetailsEquipe() : string{
             return "$this ($this->_pays - $this->_dateCreation)<br>";
+        }
+
+        /* Méthode pour obtenir l'affichage des contract de l'équipe */
+        public function getAffichageContratsEquipe() : string{
+            $result = "";
+            foreach($this->_contracts as $contract){
+                $result .= "- " . $contract->getJoueur() . " (" . $contract->getDateDebutSaison() . ")<br>";
+            }
+            return $result;
+        }
+
+        /* Méthode pour obtenir l'affichage des détails complets d'une équipe */
+        public function getAffichageDetailsCompletEquipe() : string{
+            $result = $this->getAffichageDetailsEquipe();
+            $result .= $this->getAffichageContratsEquipe();
+            return $result;
         }
 
         /* Méthode __toString de la classe */

@@ -10,6 +10,7 @@
             $this->_equipe = $equipe;
             $this->_dateDebutSaison = $dateDebutSaison;
             $this->_joueur->setContracts($this);
+            $this->_equipe->setContracts($this);
         }
 
         /* Getter et Setter pour le joueur de ce contract */
@@ -29,10 +30,10 @@
         }
 
         /* Getter et Setter pour l'année du début de saison de ce contract */
-        public function getdateDebutSaison() : string{
+        public function getDateDebutSaison() : string{
             return $this->_dateDebutSaison;
         }
-        public function setdateDebutSaison(string $dateDebutSaison){
+        public function setDateDebutSaison(string $dateDebutSaison){
             $this->_dateDebutSaison = $dateDebutSaison;
         }
 
