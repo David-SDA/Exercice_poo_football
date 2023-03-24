@@ -10,6 +10,7 @@
             $this->_nom = $nom;
             $this->_pays = $pays;
             $this->_dateCreation = $dateCreation;
+            $this->_pays->setEquipesPays($this);
         }
 
         /* Getter et Setter pour le nom de l'équipe */

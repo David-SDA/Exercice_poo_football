@@ -37,7 +37,7 @@
 
         /* Méthode __toString de la classe */
         public function __toString(){
-            return ;
+            return $this->_joueur . ", " . $this->_equipe . ", " . $this->_dateDebutSaison;
         }
     }
 ?>

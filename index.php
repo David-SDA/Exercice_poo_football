@@ -36,4 +36,13 @@
     $contractKyksPsg = new Contract($kyks, $psg, "2017");
     $contractNeymarJrFcb = new Contract($neymarJr, $fcb, "2013");
     $contractNeymarJrPsg = new Contract($neymarJr, $psg, "2017");
+
+    echo $france->getAffichageEquipesPays();
+    echo "<br>";
+    echo $espagne->getAffichageEquipesPays();
+    echo "<br>";
+    echo $angleterre->getAffichageEquipesPays();
+    echo "<br>";
+    echo $italie->getAffichageEquipesPays();
+    echo "<br>";
 ?>

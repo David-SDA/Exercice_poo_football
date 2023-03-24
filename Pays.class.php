@@ -24,6 +24,15 @@
             array_push($this->_equipesPays, $equipePays);
         }
 
+        /* Méthode pour obtenir l'affichage des équipes d'un pays */
+        public function getAffichageEquipesPays() : string{
+            $result = "$this a ces équipes : <br>";
+            foreach($this->_equipesPays as $equipe){
+                $result .= "- $equipe<br>";
+            }
+            return $result;
+        }
+
         /* Méthode __toString de la classe */
         public function __toString(){
             return $this->_nomPays;
